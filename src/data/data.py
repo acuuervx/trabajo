@@ -152,6 +152,18 @@ class Data:
         Returns:
             dict: Diccionario con métodos push, pop, peek y is_empty
         """
+        class Pila: 
+            self.pila=[]
+            def push(self, elemento):
+                #agregar elemento al final de la cola 
+                self.pila.append(elemento)
+            def pop(self):
+                #quitar el ultimo digito 
+                return self.pila.pop()
+            def peek(self):
+                return self.pila[-1]
+            def is_empty(self):
+                return len(self.pila) == 0             
         pass
     
     def implementar_cola(self):
