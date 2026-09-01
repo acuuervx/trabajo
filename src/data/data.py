@@ -103,6 +103,13 @@ class Data:
         Returns:
             list: Lista rotada
         """
+        n=len(lista)
+
+        for i in range(k):
+            ultimo = lista.pop
+            lista.inser(0,ultimo)
+
+            return lista
         pass
     
     def encuentra_numero_faltante(self, lista):
