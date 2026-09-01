@@ -63,7 +63,6 @@ class Data:
                 resultado.append(elemento)
 
                 return resultado
-
         pass
     
     def merge_ordenado(self, lista1, lista2):
@@ -77,6 +76,20 @@ class Data:
         Returns:
             list: Lista combinada y ordenada
         """
+        i=0
+        j=0
+        lista1 = []
+        lista2 = []
+        list = []
+
+        while i < len(lista1) and j < len(lista2):
+            if lista1[i]<=lista2[j]:
+                list.append(lista1[i])
+                i+=1
+            else:
+                list.append(lista2[j])
+                j+=1  
+            return list 
         pass
     
     def rotar_lista(self, lista, k):
